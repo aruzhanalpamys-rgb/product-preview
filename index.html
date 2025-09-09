@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      body {
+        background-color: hsl(30, 38%, 92%);
+        display: flex;
+        min-height: 100vh;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+      }
+      .container {
+        background-color: hsl(0, 0%, 100%);
+        width: 575px;
+        max-height: 400px;
+        display: flex;
+        border-radius: 10px;
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+      }
+      .product {
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10px 0px 0px 10px;
+      }
+      .name {
+        line-height: 1;
+        font-family: "Fraunces";
+      }
+      .theprice {
+        display: flex;
+      }
+      .perfume {
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-size: 12px;
+        color: hsl(228, 12%, 48%);
+        letter-spacing: 5px;
+        margin-top: 30px;
+      }
+      .product-info {
+        color: hsl(228, 12%, 48%);
+        font-size: 14px;
+        line-height: 1.5;
+        margin-top: -5px;
+        font-family: "Montserrat";
+      }
+
+      .name {
+        margin-top: 5px;
+      }
+      .saleprice {
+        font-family: "Fraunces";
+        color: hsl(158, 36%, 37%);
+        font-size: 35px;
+        margin-top: -5px;
+      }
+      .price {
+        font-size: 13px;
+        margin-left: 15px;
+        color: hsl(228, 12%, 48%);
+        margin-top: 8px;
+      }
+      button {
+        display: flex;
+        justify-content: center;
+        background-color: hsl(158, 36%, 37%);
+        padding: 13px;
+        margin-top: -40px;
+        width: 230px;
+        margin-left: -10px;
+        border: none;
+        border-radius: 5px;
+      }
+      button:hover {
+        background-color: rgb(7, 111, 7);
+      }
+      .order {
+        margin-top: -2px;
+      }
+      .cart {
+        margin-left: 30px;
+        margin-bottom: 10px;
+      }
+
+      .add-button {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-weight: 600;
+        color: hsl(0, 0%, 100%);
+        font-family: "Montserrat";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="product" src="image-product-desktop.jpg" alt="The Product" />
+      <div class="info">
+        <h3 class="perfume">PERFUME</h3>
+        <h1 class="name">
+          Gabrielle <br />Essence Eau<br />
+          De Parfum
+        </h1>
+        <p class="product-info">
+          A floral, solar and voluptuous<br />
+          interpretation composed by<br />Olivier Polge, Perfumer-Creator<br />
+          for the House of CHANEL.
+        </p>
+        <div class="theprice">
+          <h2 class="saleprice">$149.99</h2>
+          <p class="price"><s>$169.99</s></p>
+        </div>
+        <div class="order">
+          <img class="cart" src="icon-cart.svg" alt="Icon of Cart" />
+          <button class="add-button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
